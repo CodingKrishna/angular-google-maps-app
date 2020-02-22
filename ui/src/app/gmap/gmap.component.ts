@@ -57,7 +57,12 @@ export class GmapComponent  {
 
   ngOnInit() {
     this.commonSer.getCountryList().subscribe((res:any) =>{
-      //this.markers = res;
+      let countryList = [];
+      res.forEach((country) =>{
+        countryList.push({lat: country.latitude, lng: country.longitude, label: country.name, draggable: true});
+      })
+      this.markers = countryList;
+      console.log("this.markers ----->", this.markers);
     });
   }
 }
