@@ -57,7 +57,7 @@ export class GmapComponent  {
 
   ngOnInit() {
     this.commonSer.getCountryList().subscribe((res:any) =>{
-      this.markers = res;
+      //this.markers = res;
     });
   }
 }

@@ -42,8 +42,7 @@ const routes: Routes = [
     AgmCoreModule.forRoot({
       // please get your own API key here:
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
-      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw',
-      libraries: ["places", "geometry"]
+      apiKey: 'AIzaSyCP4n2L3QKYzBU7p6vZEfdoyfvr71DWgQw'
     })
   ],
   providers: [CommonService],
